@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>越南大戰 - 簡易版</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="gameCanvas" width="960" height="540"></canvas>
+      <div class="overlay" id="startOverlay">
+        <h1>越南大戰</h1>
+        <p>按 Enter 開始戰鬥</p>
+        <ul>
+          <li>←/→ 或 A/D：移動</li>
+          <li>↑/W 或 空白鍵：跳躍</li>
+          <li>F 或 J：射擊</li>
+        </ul>
+      </div>
+      <div class="overlay hidden" id="gameOverOverlay">
+        <h2>任務失敗</h2>
+        <p id="finalScore"></p>
+        <button id="retryButton">再來一次</button>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
